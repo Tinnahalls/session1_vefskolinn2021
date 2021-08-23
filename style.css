@@ -1,3 +1,16 @@
+
+.wrapper {
+  display: flex;
+  flex-flow: wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper  * {
+  padding: 50px;
+  flex: 1 100%;
+}
+
 /* This is my main navigation */
 .main_nav {
   display: flex;
@@ -8,23 +21,8 @@
   margin: 0;
   list-style: none;
 
-  background: tomato;
 }
 
-/* Sizing for Medium Screens */
-@media all and (max-width: 800px) {
-  .main_nav {
-    justify-content: space-around;
-  }
-} 
-
-/* Sizing for Small Screens */
-@media all and (max-width: 600px) {
-  .main_nav {
-    justify-content: column wrap;
-    padding: 0;
-  }
-} 
 
 /* Button for main navigation */
 .btn {
@@ -40,12 +38,56 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-
 }
+
 
 .btn:hover { 
 
 background: rgb(248, 94, 66);
+border-radius: 2px;
+
+}
+
+.top {
+  background: rgb(100, 100, 100);
+  text-align: center;
+}
+
+
+.middle {
+  background: rgb(243, 243, 243);
+  text-align: center;
+}
+
+
+.last {
+  background: rgb(209, 209, 209);
+  text-align: center;
+}
+
+
+/* Sizing for Medium Screens */
+@media all and (max-width: 600px) {
+  aside {flex: 1 0 0;}
+} 
+
+/* Sizing for Small Screens */
+@media all and (max-width: 800px) {
+  .top {flex: 2 0px; }
+  .top {order:2; }
+  .middle {order: 1; }
+  .last {order: 3; }
+} 
+
+body {
+  padding: 2em;
+}
+/* I assume the casscade affects the max */
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgb(250, 37, 0);
 
 }
 
