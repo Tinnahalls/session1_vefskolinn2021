@@ -12,6 +12,13 @@
 }
 
 /* This is my main navigation */
+
+.container-header{
+display: flex;
+background:rgb(124, 117, 11);
+}
+
+
 .main_nav {
   display: flex;
   flex-flow: row wrap;
@@ -20,14 +27,22 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
+
+.logo {
+  text-align: left;
+  flex: 3;
+  font-size: 1em;
+  background: rgb(124, 117, 11);
+  margin-left: 1em;
+  color: aliceblue;
+}
 
 /* Button for main navigation */
 .btn {
   display: block;
-  background: tomato;
+  background: rgb(124, 117, 11);
   padding: 2px;
   width: 220px;
   height: 50px;
@@ -38,45 +53,44 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+  flex: 1;
 }
 
 
 .btn:hover { 
 
-background: rgb(248, 94, 66);
+background: rgb(124, 117, 11);
 border-radius: 2px;
 
 }
 
-.top {
-  background: rgb(100, 100, 100);
+.container-1, .container-2, .container-3 {
+  
+  background: rgba(174, 211, 242, 1);
   text-align: center;
+  flex: 2; 
+  padding: 2px;
+  margin: 2px;
+  border-bottom: 1px solid rgba(45, 241, 255, 0.1);
+  border-radius: 2px; 
+
 }
 
 
-.middle {
-  background: rgb(243, 243, 243);
-  text-align: center;
-}
-
-
-.last {
-  background: rgb(209, 209, 209);
-  text-align: center;
-}
 
 
 /* Sizing for Medium Screens */
 @media all and (max-width: 600px) {
-  aside {flex: 1 0 0;}
+  .about_top {flex: 1 0 0;}
 } 
 
 /* Sizing for Small Screens */
 @media all and (max-width: 800px) {
-  .top {flex: 2 0px; }
-  .top {order:2; }
-  .middle {order: 1; }
-  .last {order: 3; }
+  .about_top{flex: 2 0px; }
+  .about_top{flex: 1;}
+  .middle {order: 3; }
+  .last {order: 1; }
+  .footer {order: 2;}
 } 
 
 body {
@@ -87,7 +101,18 @@ body {
 .btn {
   text-align: center;
   padding: 10px;
-  border-top: 1px solid rgb(250, 37, 0);
+  border-top: 1px solid rgba(140, 131, 14, 1);
 
 }
+
+
+/* font design */
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
 
