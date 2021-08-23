@@ -1,0 +1,51 @@
+/* This is my main navigation */
+.main_nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-end;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  background: tomato;
+}
+
+/* Sizing for Medium Screens */
+@media all and (max-width: 800px) {
+  .main_nav {
+    justify-content: space-around;
+  }
+} 
+
+/* Sizing for Small Screens */
+@media all and (max-width: 600px) {
+  .main_nav {
+    justify-content: column wrap;
+    padding: 0;
+  }
+} 
+
+/* Button for main navigation */
+.btn {
+  display: block;
+  background: tomato;
+  padding: 2px;
+  width: 220px;
+  height: 50px;
+  margin-top: 2px;
+  line-height: 50px;
+  color: aliceblue;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.btn:hover { 
+
+background: rgb(248, 94, 66);
+
+}
+
