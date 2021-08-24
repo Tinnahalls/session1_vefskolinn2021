@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Merriweather', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+}
+
 
 .wrapper {
   display: flex;
@@ -53,7 +58,7 @@ justify-content:flex-end;
   height: 50px;
   margin-top: 2px;
   line-height: 50px;
-
+  font-family: 'Merriweather', serif;
 }
 
 /* Button for main navigation */
@@ -94,12 +99,16 @@ border-radius: 2px;
 
 }
 
-
+/* Making Navigation Dissapear*/
+@media all and (max-width: 600px) {
+  .btn {display: none;}
+} 
 
 
 /* Sizing for Medium Screens */
 @media all and (max-width: 600px) {
   .about_top {flex: 1 0 0;}
+  .main_nav {flex: 1 0 0;}
 } 
 
 /* Sizing for Small Screens */
@@ -122,7 +131,7 @@ body {
   text-align: center;
   padding: 10px;
   border-top: 1px solid #665939;
-  
+
 }
 
 
