@@ -4,18 +4,22 @@
   flex-flow: wrap;
   font-weight: bold;
   text-align: center;
+
 }
 
 .wrapper  * {
   padding: 50px;
   flex: 1 100%;
+
 }
 
 /* This is my main navigation */
 
-.container-header{
+.container-header {
 display: flex;
-background:rgb(124, 117, 11);
+background:#665939;
+justify-content:flex-end;
+
 }
 
 
@@ -23,28 +27,41 @@ background:rgb(124, 117, 11);
   display: flex;
   flex-flow: row wrap;
   justify-content:flex-end;
-  
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
+  background: #665939;
+
 }
 
 
+
 .logo {
+  display: block;
   text-align: left;
-  flex: 3;
-  font-size: 1em;
-  background: rgb(124, 117, 11);
+  flex: 2;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  background: #665939;
   margin-left: 1em;
   color: aliceblue;
+  padding: 2px;
+  width: 250px;
+  height: 50px;
+  margin-top: 2px;
+  line-height: 50px;
+
 }
 
 /* Button for main navigation */
 .btn {
   display: block;
-  background: rgb(124, 117, 11);
+  background: #665939;
   padding: 2px;
-  width: 220px;
+  width: 250px;
   height: 50px;
   margin-top: 2px;
   line-height: 50px;
@@ -54,6 +71,7 @@ background:rgb(124, 117, 11);
   text-align: center;
   text-decoration: none;
   flex: 1;
+
 }
 
 
@@ -66,12 +84,12 @@ border-radius: 2px;
 
 .container-1, .container-2, .container-3 {
   
-  background: rgba(174, 211, 242, 1);
+  background: #39360D;
   text-align: center;
   flex: 2; 
   padding: 2px;
   margin: 2px;
-  border-bottom: 1px solid rgba(45, 241, 255, 0.1);
+  border-bottom: 1px solid #665939;
   border-radius: 2px; 
 
 }
@@ -91,18 +109,20 @@ border-radius: 2px;
   .middle {order: 3; }
   .last {order: 1; }
   .footer {order: 2;}
+
 } 
 
 body {
   padding: 2em;
+
 }
 /* I assume the casscade affects the max */
 
 .btn {
   text-align: center;
   padding: 10px;
-  border-top: 1px solid rgba(140, 131, 14, 1);
-
+  border-top: 1px solid #665939;
+  
 }
 
 
@@ -116,3 +136,17 @@ h1 {
 }
 
 
+
+/* Color Theme Swatches in Hex */
+.Pink-Accordian-Tomato-1-hex { color: #39360D; }
+.Pink-Accordian-Tomato-2-hex { color: #665939; }
+.Pink-Accordian-Tomato-3-hex { color: #B34137; }
+.Pink-Accordian-Tomato-4-hex { color: #910200; }
+.Pink-Accordian-Tomato-5-hex { color: #590202; }
+
+/* Color Theme Swatches in HSLA */
+.Pink-Accordian-Tomato-1-hsla { color: hsla(55, 62, 13, 1); }
+.Pink-Accordian-Tomato-2-hsla { color: hsla(42, 28, 31, 1); }
+.Pink-Accordian-Tomato-3-hsla { color: hsla(4, 52, 45, 1); }
+.Pink-Accordian-Tomato-4-hsla { color: hsla(0, 100, 28, 1); }
+.Pink-Accordian-Tomato-5-hsla { color: hsla(0, 95, 17, 1); }
