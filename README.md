@@ -4,7 +4,7 @@ This site is the first project for Vefskolinn to practice getting acquainted wit
 # What is HTML and CSS?
 
 1. First ordered list item
-2. Another item
+2. Another item.
 ⋅⋅* Understand what a markup language is.
 ⋅⋅* Understand what a style sheet language is.
 ⋅⋅* Understand what the "cascading" in Cascading Style Sheets means.
