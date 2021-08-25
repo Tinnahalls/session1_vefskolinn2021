@@ -3,8 +3,9 @@ This site is the first project for Vefskolinn to practice getting acquainted wit
 
 # What is HTML and CSS?
 
-Knowledge
-⋅⋅*  Understand what a markup language is
+#Knowledge
+
+    ⋅⋅*  Understand what a markup language is
     ⋅⋅*  Understand what a style sheet language is
     ⋅⋅*  Understand what the "cascading" in Cascading Style Sheets means
     ⋅⋅*  Understand what "static site hosting" is
