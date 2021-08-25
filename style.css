@@ -3,20 +3,31 @@
   src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 }
 
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+  width: 100%;
+  flex: 1;
+
+}
+
 
 .wrapper {
   display: flex;
   flex-flow: wrap;
   font-weight: bold;
   text-align: center;
-
+  
+  
 }
 
+/* Might not use this */
 .wrapper  * {
   padding: 50px;
   flex: 1 100%;
 
 }
+
 
 /* This is my main navigation */
 
@@ -24,7 +35,7 @@
 display: flex;
 background:#665939;
 justify-content:flex-end;
-
+ 
 }
 
 
@@ -34,7 +45,7 @@ justify-content:flex-end;
   justify-content:flex-end;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 2px;
   list-style: none;
   background: #665939;
 
@@ -70,7 +81,7 @@ justify-content:flex-end;
   height: 50px;
   margin-top: 2px;
   line-height: 50px;
-  color: aliceblue;
+  color: #F6F7F1;
   font-size: 2em;
   font-weight: bold;
   text-align: center;
@@ -87,17 +98,67 @@ border-radius: 2px;
 
 }
 
-.container-1, .container-2, .container-3 {
+.container-1, .container-2, .container-3, .container-4 {
   
-  background: #39360D;
-  text-align: center;
+  display:flex;
+  flex-wrap: wrap;
+  background: #665939;
   flex: 2; 
   padding: 2px;
   margin: 2px;
   border-bottom: 1px solid #665939;
-  border-radius: 2px; 
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
 
 }
+
+.container-4 {
+  flex: 1;
+  margin: 2px;
+  max-width: 1192px;
+
+}
+
+
+.container_footer{
+  display:flex;
+  flex-wrap: wrap;
+  background: #665939;
+  flex: 2; 
+  padding: 2px;
+  margin: 2px;
+  border-bottom: 1px solid #665939;
+  width: 100%;
+  max-width: 1192px;
+  height: 250px;
+
+}
+
+
+.image {
+  display:flex;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+}
+
+.image_about {
+  background-image: url("img/eatable.png");
+}
+
+.image_eatable {
+  background-image: url("img/5.png");
+
+}
+
+.image_poison {
+  background-image: url("img/6.png");
+}
+
 
 /* Making Navigation Dissapear*/
 @media all and (max-width: 600px) {
@@ -107,22 +168,22 @@ border-radius: 2px;
 
 /* Sizing for Medium Screens */
 @media all and (max-width: 600px) {
-  .about_top {flex: 1 0 0;}
   .main_nav {flex: 1 0 0;}
+  .container {flex: 1 0 0;}
 } 
 
 /* Sizing for Small Screens */
 @media all and (max-width: 800px) {
-  .about_top{flex: 2 0px; }
-  .about_top{flex: 1;}
-  .middle {order: 3; }
-  .last {order: 1; }
-  .footer {order: 2;}
-
+  .container{flex: 2 0px; }
+  .container{flex: 1;}
+  .container-1 {order: 3; }
+  .container-2 {order: 1; }
+  .container-3 {order: 2;}
 } 
 
 body {
   padding: 2em;
+ 
 
 }
 /* I assume the casscade affects the max */
@@ -134,28 +195,38 @@ body {
 
 }
 
-
 /* font design */
 
 h1 {
   font-size: 2em;
-  font-weight: bold;
   text-decoration: none;
-
+  color: #F6F7F1;
 }
 
 
+.header_text, .recipe_text{
+position: absolute;
+line-height: 350px;
+margin-bottom: auto;
+font-size: 1.3em;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: lighter;
 
-/* Color Theme Swatches in Hex */
-.Pink-Accordian-Tomato-1-hex { color: #39360D; }
-.Pink-Accordian-Tomato-2-hex { color: #665939; }
-.Pink-Accordian-Tomato-3-hex { color: #B34137; }
-.Pink-Accordian-Tomato-4-hex { color: #910200; }
-.Pink-Accordian-Tomato-5-hex { color: #590202; }
+}
 
-/* Color Theme Swatches in HSLA */
-.Pink-Accordian-Tomato-1-hsla { color: hsla(55, 62, 13, 1); }
-.Pink-Accordian-Tomato-2-hsla { color: hsla(42, 28, 31, 1); }
-.Pink-Accordian-Tomato-3-hsla { color: hsla(4, 52, 45, 1); }
-.Pink-Accordian-Tomato-4-hsla { color: hsla(0, 100, 28, 1); }
-.Pink-Accordian-Tomato-5-hsla { color: hsla(0, 95, 17, 1); }
+ul {
+  display: flex;
+
+}
+
+li {
+display: block;
+flex: 1;
+width: 250px;
+line-height: 350px;
+margin-bottom: auto;
+font-size: 1.3em;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: lighter;
+color: #F6F7F1;
+}
