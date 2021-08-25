@@ -5,13 +5,13 @@ This site is the first project for Vefskolinn to practice getting acquainted wit
 
 #Knowledge
 
-    ⋅⋅*  Understand what a markup language is
-    ⋅⋅*  Understand what a style sheet language is
-    ⋅⋅*  Understand what the "cascading" in Cascading Style Sheets means
-    ⋅⋅*  Understand what "static site hosting" is
+    ⋅⋅*  Understand what a markup language is.
+    ⋅⋅*  Understand what a style sheet language is.
+    ⋅⋅*  Understand what the "cascading" in Cascading Style Sheets means.
+    ⋅⋅*  Understand what "static site hosting" is.
 
-Skills
-⋅⋅*  Be able to setup a development environment to start a web development project
+#Skills
+    ⋅⋅*  Be able to setup a development environment to start a web development project
     ⋅⋅*   Be able to use HTML and CSS to create a simple website
     ⋅⋅*   Be able to use the browser's development tools to inspect a website's code
     ⋅⋅*  Be able to publish a static website
