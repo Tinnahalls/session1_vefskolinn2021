@@ -3,7 +3,7 @@ This site is the first project for Vefskolinn to practice getting acquainted wit
 
 # CSS & HTML
 This project needs to show that I;
-    1. Understand what a markup language is.
-    2. Understand what a style sheet language is.
-    3. Understand what the "cascading" in Cascading Style Sheets means.
-    4. Understand what "static site hosting" is.
+1. Understand what a markup language is.
+2. Understand what a style sheet language is.
+3. Understand what the "cascading" in Cascading Style Sheets means.
+4. Understand what "static site hosting" is.
