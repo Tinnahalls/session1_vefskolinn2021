@@ -5,7 +5,12 @@ This site is the first project for Vefskolinn to practice getting acquainted wit
 
 1. First ordered list item
 2. Another item
-⋅⋅* Unordered sub-list. 
+⋅⋅* Understand what a markup language is.
+⋅⋅* Understand what a style sheet language is.
+⋅⋅* Understand what the "cascading" in Cascading Style Sheets means.
+⋅⋅* Understand what "static site hosting" is.
+
+
 1. Actual numbers don't matter, just that it's a number
 ⋅⋅1. Ordered sub-list
 4. And another item.
@@ -20,12 +25,7 @@ This site is the first project for Vefskolinn to practice getting acquainted wit
 - Or minuses
 + Or pluses
 
-#Knowledge
 
-    ⋅⋅*  Understand what a markup language is.
-    ⋅⋅*  Understand what a style sheet language is.
-    ⋅⋅*  Understand what the "cascading" in Cascading Style Sheets means.
-    ⋅⋅*  Understand what "static site hosting" is.
 
 #Skills
     ⋅⋅*  Be able to setup a development environment to start a web development project
