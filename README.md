@@ -1,16 +1,10 @@
-# Session 1 for Vefskolinn 2021
-This site is the first project for Vefskolinn to practice getting acquainted with the tools we will be using in this course and learn a bit of HTML and CSS. 
+# Session 1 for Vefskolinn 2021 updated to use SCSS
+This site is the first project for Vefskolinn to practice getting acquainted with the tools we will be using in this course and learn a bit of HTML and CSS.
+Now it has been updated with SCSS
 
-# CSS & HTML
-This project needs to show that I;
-1. Understand what a markup language is.
-2. Understand what a style sheet language is.
-3. Understand what the "cascading" in Cascading Style Sheets means.
-4. Understand what "static site hosting" is.
+# SCSS
+This project uses SASS, it uses watch sass to compile the scss to a css file. 
+I used @import thought I am a aware @use and @forward will be the thing moving forward. 
 
-
-This project needs to show my skills in;
-1. That I can set up a development environment to star a web development project. 
-2. Be able to use a HTML and CSS to create a simple website.
-3. Be able to use the browser's development tools to inspect websites code.
-4. Be able to publish a static website.
+# Please read the comment
+Please read the comment in the code to see the work done. The site is not optimally design,  this is just to show what I have learned. 
