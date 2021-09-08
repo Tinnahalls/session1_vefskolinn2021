@@ -1,0 +1,19 @@
+// Loop for padding and margin, this way you can set as class the name for exmple my-2 and you will have 2rem padding. 
+
+$spaceamounts: (1,2,3,4);
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}

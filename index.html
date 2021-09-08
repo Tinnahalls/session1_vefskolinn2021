@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet" />
+  <link href="scss/style.css" rel="stylesheet" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,900&display=swap');
     </style> 
@@ -13,79 +13,76 @@
 </head>
 
 
-
 <body>
 
  
     <!-- header and navigation-->
-    <header>
+    <div class=homepage>
       
-      <nav id="main_nav" class="main_nav" aria-label="Main navigation">
+      <nav id="nav" class="nav" aria-label="Main navigation">
            <div class="logo"> Funghi </div> 
          <!-- list of links to main website locations -->
-          <div class="btn about_btn">About</div>
-          <div class="btn info_btn">Funghi</div>
-          <div class="btn contact_btn">Contact</div>
+          <ul>
+          <li><a href="#" class="btn-nav">About</a></li>
+          <li><a href="#" class="btn-nav">Funghi</a></li>
+          <li><a href="#" class="btn-nav">Contact</a></li>
+          </ul>
+
       </nav>
     
-    </header>
 
-    <main>  
-
-<div class="wrapper">
+<div class="homepage-content">
 
       <!--top of page first link-->
-      <div class="container-1">
-          <div class="image image_about">
+      <div class="my-1 container-1">
+        <div class="content">
+        <img src="img/5.png" alt="image of delicacy mushroom">
             <h1 class="text header_text">eatable</h1>
-        
-          </div>
+        </div>
         </div>     
     
 
       <!--second page second link-->
-      <div class="container-2">
-        <div class="image image_eatable">
+      <div class="my-1 container-2">
+        <div class="content">
+        <img src="img/6.png"  alt="image of poisionous mushroom" >
           <h1 class="text header_text">delicacy</h1>
-        </div>  
+        </div>
+      
     </div>
      
 
         <!--third page third link-->
-        <div class="container-3">
-          <div class="image image_poison">
+        <div class="my-1 container-3">
+          <div class="content">
+          <img src="img/5.png" alt="image of eatable mushroom">
             <h1 class="text header_text">poisonous</h1>
+            </div>
           </div>  
-          
-      </div>
 
-    </div>
-  
-  <div class="wrapper"></div>
-  <div class="container-4">
-    <div class="image">
-  <h1 class="text recipe_text">Recipies</h1>  
 </div>
-    </div>
-  </div>
   
-</main>   
-    <!-- footer -->
-    <footer>
+          <div class="container-4">
+           <div class="image">
+          <h1 class="text recipe_text">Recipies</h1>  
+       
 
-      <nav id="footer-nav" aria-label="Main">
-        <!-- list of links to main website locations -->
-        <div class="footer container_footer">
-        <ul>
-          <li>Contact Us</li>
-          <li>Hafnafjörður 1</li>
-          <li>About</li>
-          <li>Funghi</li>
+      <div class="homepage_links">
+       <ul>
+        <li><a href="#" class="btn-nav">About</a></li>
+        <li><a href="#" class="btn-nav">Funghi</a></li>
+        <li><a href="#" class="btn-nav">Contact</a></li>
         </ul>
-      </div>
-    
-      </nav>
-    </footer>
+        </div>
+  </div>
+
+    <!-- list of links to main website locations -->
+
+
+
+    </div>
+
+  </div>
 
 
   </body>

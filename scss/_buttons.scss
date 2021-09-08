@@ -1,0 +1,27 @@
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin:3px;
+
+  &:hover {
+    transform: scale(.98);
+  }
+
+}
+
+/* Here you can see the primary button, it uses extend wich mean it is using the style from btn and then adds to it. It also uses a lighten version of the primary colour(10%) */
+
+.btn-primary {
+  @extend %btn;
+  @include set-background(lighten($primary-colour, 
+  10%));
+  
+
+  }
+
+  .btn-secondary {
+    @extend %btn;
+    background-color: $secondary-colour;
+   @include set-background(lighten($primary-colour, 10%))
+    }

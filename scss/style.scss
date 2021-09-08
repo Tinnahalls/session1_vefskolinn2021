@@ -1,0 +1,120 @@
+@import'config.scss';
+@import'utility.scss';
+@import'buttons.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:$light-color;
+  font-family: $font-main;
+  line-height: 1.6;
+  background-color: $primary-colour;
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+
+}
+/* Here you can see that the homepage is the parent, 
+then we have the navigation in there and inside the navigation we focus on links and lists.
+inside the homepage we also have other elements*/
+
+
+.homepage {
+
+  @include set-background($primary-colour);
+
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      li {
+        padding: 15px;
+      }
+
+      a {
+        list-style: none;
+        text-decoration: none;
+        color: $secondary-colour;
+      }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a:hover {
+    color: $secondary-colour;
+  }
+
+  /* Here we use & to extend the name of the class
+  this is homepage-content class name*/
+
+  &-content{
+  height: 100%;
+  display: flex;
+ 
+
+    img {
+      width: 100%;
+      align-items: center;
+    }
+
+    h1{
+      font-size: 2rem;
+      line-height: 1.2;
+      align-items: center;
+      
+    }
+  
+
+    .content{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center
+    }
+
+
+  }
+
+
+
+
+  &_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      li {
+        padding: 15px;
+      }
+
+      a {
+        list-style: none;
+        @include set-background(lighten($primary-colour, 10%));
+      }
+    }
+
+
+
+
+
+}
